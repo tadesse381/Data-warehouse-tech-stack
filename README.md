@@ -26,7 +26,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](#)
 
 A fully dockerized scalable ELT pipeline using MySQL, Airflow, DBT and Redash.
 
@@ -53,7 +52,7 @@ Make sure you have docker installed on local machine.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/zelalemgetahun9374/sensor-data-ELT.git
+   git clone https://github.com/tadesse381/Data-warehouse-tech-stack.git
    ```
 2. Run
    ```sh
