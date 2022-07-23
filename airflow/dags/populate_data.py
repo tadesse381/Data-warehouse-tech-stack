@@ -6,9 +6,9 @@ from airflow.providers.mysql.operators.mysql import MySqlOperator
 from airflow.operators.email_operator import EmailOperator
 
 default_args = {
-    'owner': 'zelalem',
+    'owner': 'tadesse',
     'depends_on_past': False,
-    'email': ['zelalemgetahun9374@gmail.com'],
+    'email': ['taddeekb@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 1,
@@ -59,7 +59,7 @@ insert_station_summary = MySqlOperator(
 )
 
 email = EmailOperator(task_id='send_email',
-                      to='zelalemgetahun9374@gmail.com',
+                      to='tadddeekb@gmail.com',
                       subject='Daily report generated',
                       html_content=""" <h1>Congratulations! Data populated.</h1> """,
                       dag=dag
