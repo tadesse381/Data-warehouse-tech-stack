@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: stg_I80_sample
+    description: Imputed sensor data of 49 stations from January to October 2016
+    columns:
+      - name: date_time
+        description: The date and time when the observation was recoreded
+        tests:
+          - not_null
+      - name: station_id
+        description: The id of for the station
+        tests:
+          - not_null
+
+  - name: stg_I80_stations
+    description: Station Metadata for 53 stations
+    columns:
+      - name: ID
+        description: The id of for the station
+        tests:
+          - unique
+          - not_null
+  
+  - name: stg_richards
+    description: 30 second time series for a single station (Richards Ave) near downtown Davis
+    columns:
+      - name: timestamp
+        tests:
+          - not_null
+          
+  - name: stg_station_summary
+    description: Summary statistics for sensor data of 49 stations from January to October 2016
+    columns:
+      - name: ID
+        description: The id of for the station
+        tests:
+          - unique
+          - not_null
+      - name: n_obs
+        description: Number of observations
+        tests:
+          - not_null
+      
+  - name: I80_sample_detail
+    description: Imputed sensor data of 49 stations from January to October 2016 with detail about the stations
+    columns:
+      - name: station_id
+        description: The id of for the station
+        tests:
+          - not_null    
+      
+  - name: stations_summary_detail
+    description: Summary statistics for sensor data of 49 stations from January to October 2016 with detail about the stations
+    columns:
+      - name: ID
+        description: The id of for the station
+        tests:
+          - unique
+          - not_null

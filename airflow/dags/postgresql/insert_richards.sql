@@ -1,0 +1,1 @@
+COPY richards FROM '/data/richards.csv' WITH DELIMITER AS ',' NULL AS '\null' CSV HEADER;

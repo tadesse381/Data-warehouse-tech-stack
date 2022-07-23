@@ -1,0 +1,1 @@
+COPY I80Davis FROM '/data/I80_davis.txt' WITH DELIMITER AS ',' NULL AS '\null' CSV HEADER;

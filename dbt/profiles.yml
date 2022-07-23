@@ -1,0 +1,10 @@
+mysql:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      server: mysqldb
+      port: 3306
+      schema: analytics
+      username: root
+      password: root

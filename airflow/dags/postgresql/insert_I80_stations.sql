@@ -1,0 +1,1 @@
+COPY I80Stations FROM '/data/I80_stations.csv' WITH DELIMITER AS ',' NULL AS '\null' CSV HEADER;

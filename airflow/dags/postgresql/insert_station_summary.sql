@@ -1,0 +1,1 @@
+COPY station_summary FROM '/data/station_summary.csv' WITH DELIMITER AS ',' NULL AS '\null' CSV HEADER;
