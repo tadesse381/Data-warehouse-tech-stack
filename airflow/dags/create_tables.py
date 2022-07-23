@@ -6,9 +6,9 @@ from datetime import timedelta
 
 
 default_args = {
-    'owner': 'zelalem',
+    'owner': 'tadesse',
     'depends_on_past': False,
-    'email': ['zelalemgetahun9374@gmail.com'],
+    'email': ['taddeekb@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 1,
@@ -52,7 +52,7 @@ create_station_summary_table = MySqlOperator(
 )
 
 email = EmailOperator(task_id='send_email',
-                      to='zelalemgetahun9374@gmail.com',
+                      to='taddeekb@gmail.com',
                       subject='Daily report generated',
                       html_content=""" <h1>Congratulations! The tables are created.</h1> """,
                       dag=dag,
