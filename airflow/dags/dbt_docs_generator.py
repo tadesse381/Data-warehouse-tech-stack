@@ -4,9 +4,9 @@ from datetime import datetime as dt
 from datetime import timedelta
 
 default_args = {
-    'owner': 'zelalem',
+    'owner': 'tadesse',
     'depends_on_past': False,
-    'email': ['zelalemgetahun9374@gmail.com'],
+    'email': ['taddeekb@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 1,
